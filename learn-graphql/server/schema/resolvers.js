@@ -18,6 +18,7 @@ const resolvers = {
         movie: (parent, args) => {
             const name = args.name;
             const movie = _.find(MovieList, {name: name})
+            return movie
         }
     },
 
